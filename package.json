@@ -1,25 +1,15 @@
 {
-  "name": "swagger-tools",
-  "version": "0.10.3",
+  "name": "swagger-lint",
+  "version": "0.0.1",
   "description": "Various tools for using and integrating with Swagger.",
   "main": "index.js",
   "scripts": {
     "test": "gulp",
     "test-debug": "node --debug-brk node_modules/.bin/gulp"
   },
-  "author": {
-    "name": "Jeremy Whitlock",
-    "email": "jwhitlock@apache.org",
-    "url": "https://github.com/whitlockjc"
-  },
-  "bugs": {
-    "url": "https://github.com/apigee-127/swagger-tools/issues"
-  },
-  "homepage": "https://github.com/apigee-127/swagger-tools",
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/apigee-127/swagger-tools.git"
+    "url": "git://github.com/tmobile/swagger-lint.git"
   },
   "keywords": [
     "api",

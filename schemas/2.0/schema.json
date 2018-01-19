@@ -6,7 +6,10 @@
   "required": [
     "swagger",
     "info",
-    "paths"
+    "paths",
+    "host",
+    "basePath",
+    "contact"
   ],
   "additionalProperties": false,
   "patternProperties": {
@@ -81,7 +84,8 @@
       "description": "General information about the API.",
       "required": [
         "version",
-        "title"
+        "title",
+        "description"
       ],
       "additionalProperties": false,
       "patternProperties": {
@@ -349,6 +353,14 @@
       }
     },
     "responseValue": {
+      "required": [
+        "description"
+      ],
+      "properties": {
+        "description": {
+          "$ref": "http://json-schema.org/draft-04/schema#/properties/description"
+        }
+      },
       "oneOf": [
         {
           "$ref": "#/definitions/response"
@@ -360,9 +372,6 @@
     },
     "response": {
       "type": "object",
-      "required": [
-        "description"
-      ],
       "properties": {
         "description": {
           "type": "string"
@@ -482,7 +491,7 @@
       "required": [
         "name",
         "in",
-        "schema"
+        "schema"      
       ],
       "patternProperties": {
         "^x-": {
@@ -889,7 +898,8 @@
       "required": [
         "name",
         "in",
-        "type"
+        "type",
+        "description"
       ],
       "oneOf": [
         {
@@ -1054,7 +1064,8 @@
         }
       },
       "required": [
-        "type"
+        "type",
+        "description"
       ],
       "properties": {
         "format": {
@@ -1214,7 +1225,7 @@
           "type": "string"
         },
         "description": {
-          "type": "string"
+          "$ref": "http://json-schema.org/draft-04/schema#/properties/description"
         },
         "externalDocs": {
           "$ref": "#/definitions/externalDocs"
@@ -1255,7 +1266,8 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "type"
+        "type",
+        "description"
       ],
       "properties": {
         "type": {
@@ -1265,7 +1277,7 @@
           ]
         },
         "description": {
-          "type": "string"
+          "$ref": "http://json-schema.org/draft-04/schema#/properties/description"
         }
       },
       "patternProperties": {
@@ -1280,7 +1292,8 @@
       "required": [
         "type",
         "name",
-        "in"
+        "in",
+        "description"
       ],
       "properties": {
         "type": {
@@ -1300,7 +1313,7 @@
           ]
         },
         "description": {
-          "type": "string"
+          "$ref": "http://json-schema.org/draft-04/schema#/properties/description"
         }
       },
       "patternProperties": {
@@ -1315,7 +1328,8 @@
       "required": [
         "type",
         "flow",
-        "authorizationUrl"
+        "authorizationUrl",
+        "description"
       ],
       "properties": {
         "type": {
@@ -1338,7 +1352,7 @@
           "format": "uri"
         },
         "description": {
-          "type": "string"
+          "$ref": "http://json-schema.org/draft-04/schema#/properties/description"
         }
       },
       "patternProperties": {
@@ -1353,7 +1367,8 @@
       "required": [
         "type",
         "flow",
-        "tokenUrl"
+        "tokenUrl",
+        "description"
       ],
       "properties": {
         "type": {
@@ -1376,7 +1391,7 @@
           "format": "uri"
         },
         "description": {
-          "type": "string"
+          "$ref": "http://json-schema.org/draft-04/schema#/properties/description"
         }
       },
       "patternProperties": {
@@ -1391,7 +1406,8 @@
       "required": [
         "type",
         "flow",
-        "tokenUrl"
+        "tokenUrl",
+        "description"
       ],
       "properties": {
         "type": {
@@ -1414,7 +1430,7 @@
           "format": "uri"
         },
         "description": {
-          "type": "string"
+          "$ref": "http://json-schema.org/draft-04/schema#/properties/description"
         }
       },
       "patternProperties": {
@@ -1430,7 +1446,8 @@
         "type",
         "flow",
         "authorizationUrl",
-        "tokenUrl"
+        "tokenUrl",
+        "description"
       ],
       "properties": {
         "type": {
@@ -1457,7 +1474,7 @@
           "format": "uri"
         },
         "description": {
-          "type": "string"
+          "$ref": "http://json-schema.org/draft-04/schema#/properties/description"
         }
       },
       "patternProperties": {

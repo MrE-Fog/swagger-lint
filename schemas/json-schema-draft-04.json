@@ -23,6 +23,10 @@
             "items": { "type": "string" },
             "minItems": 1,
             "uniqueItems": true
+        },
+        "nonEmptyString": {
+            "type": "string",
+            "minLength": 1
         }
     },
     "type": "object",
@@ -38,9 +42,7 @@
         "title": {
             "type": "string"
         },
-        "description": {
-            "type": "string"
-        },
+        "description": { "$ref": "#/definitions/nonEmptyString" },
         "default": {},
         "multipleOf": {
             "type": "number",
