@@ -8,8 +8,7 @@
     "info",
     "paths",
     "host",
-    "basePath",
-    "contact"
+    "basePath"
   ],
   "additionalProperties": false,
   "patternProperties": {
@@ -85,7 +84,8 @@
       "required": [
         "version",
         "title",
-        "description"
+        "description",
+        "contact"
       ],
       "additionalProperties": false,
       "patternProperties": {
