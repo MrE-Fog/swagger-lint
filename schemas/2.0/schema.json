@@ -491,7 +491,8 @@
       "required": [
         "name",
         "in",
-        "schema"      
+        "schema",
+        "description"
       ],
       "patternProperties": {
         "^x-": {
