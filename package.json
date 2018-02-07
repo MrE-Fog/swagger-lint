@@ -1,19 +1,19 @@
 {
   "name": "swagger-lint",
   "version": "0.0.1",
-  "description": "Various tools for using and integrating with Swagger.",
+  "description": "Various tools for using and integrating with Swagger",
   "main": "index.js",
   "scripts": {
     "test": "gulp",
     "test-debug": "node --debug-brk node_modules/.bin/gulp"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/tmobile/swagger-lint.git"
   },
   "keywords": [
     "api",
-    "connect",
     "middleware",
     "swagger"
   ],
